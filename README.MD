@@ -1,185 +1,238 @@
-# SpotiFX 🎵
+# 🎧 SpotiFX
 
 <div align="center">
-  
-![SpotiFX Logo](https://via.placeholder.com/150x150.png?text=SpotiFX)
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/AmirVoid12/SpotiFX)
-[![Python](https://img.shields.io/badge/python-3.6%2B-brightgreen.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/AmirVoid12/SpotiFX?style=social)](https://github.com/AmirVoid12/SpotiFX/stargazers)
+<img src="https://via.placeholder.com/200x200.png?text=SpotiFX" alt="SpotiFX Logo" width="200"/>
 
-**The Ultimate Spotify Music Downloader**
+### Your Ultimate Spotify Music Downloader
 
-*SpotiFX lets you download your favorite Spotify tracks, albums, and playlists for offline listening.*
+[![Version](https://img.shields.io/badge/version-3.2.1-00BFFF?style=for-the-badge&logo=github)](https://github.com/AmirVoid12/SpotiFX)
+[![Python](https://img.shields.io/badge/python-3.6+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-22B573?style=for-the-badge)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/AmirVoid12/SpotiFX?style=for-the-badge&color=yellow&logo=github)](https://github.com/AmirVoid12/SpotiFX/stargazers)
 
-[Features](#features) • [Installation](#installation) • [Usage](#usage) • [Screenshots](#screenshots) • [Configuration](#configuration) • [FAQ](#faq) • [License](#license)
+*Transform how you enjoy music with SpotiFX - Download your favorite tracks, albums, and playlists in premium quality*
+
+[✨ Features](#-features) • [🚀 Installation](#-installation) • [🎮 Usage](#-usage) • [📸 Screenshots](#-screenshots) • [⚙️ Config](#%EF%B8%8F-configuration) • [❓ FAQ](#-faq)
 
 </div>
 
-## 📋 Features
+---
 
-- **🎵 Comprehensive Music Download:** Download tracks, albums, and entire playlists from Spotify
-- **🎚️ High-Quality Audio:** Download in up to 320kbps MP3 format
-- **📑 Complete Metadata:** Automatic tagging with album art, artist info, and lyrics
-- **⏱️ Concurrent Downloads:** Download multiple tracks simultaneously
-- **📂 Smart Organization:** Automatically organizes music by artist and album
-- **📊 Track Progress:** Visual download progress tracking with ETA
-- **⚙️ Customizable Settings:** Configure download quality, location, and more
-- **📜 Download History:** Keep track of all downloaded music
-- **⚡ Batch Download:** Process multiple URLs at once
-- **🔍 Spotify Search:** Find and download music directly from the app
-- **💾 Cache System:** Efficient caching for faster repeated operations
-- **📱 CLI Support:** Command-line interface for scripting and automation
+## ✨ Features
 
-## 🔧 Installation
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="33%">
+<h3>🎵 Full Music Library</h3>
+Download tracks, albums and entire playlists from Spotify
+</td>
+<td align="center" width="33%">
+<h3>🔊 Premium Quality</h3>
+Get your music in high-definition 320kbps MP3 format
+</td>
+<td align="center" width="33%">
+<h3>📊 Visual Tracking</h3>
+Real-time progress bars with estimated completion time
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<h3>🖼️ Rich Metadata</h3>
+Complete with album artwork, artist info, and lyrics
+</td>
+<td align="center" width="33%">
+<h3>⚡ Parallel Processing</h3>
+Download multiple tracks simultaneously
+</td>
+<td align="center" width="33%">
+<h3>📱 CLI Support</h3>
+Powerful command-line options for automation
+</td>
+</tr>
+</table>
+
+</div>
+
+## 🌟 More Highlights
+
+- **📂 Smart Organization** - Files automatically sorted by artist and album
+- **🔍 Spotify Search** - Find and download music without leaving the app
+- **📝 Track History** - Complete log of all downloaded music
+- **⚙️ Full Customization** - Configure every aspect of your downloads
+- **💨 Cache System** - Blazing fast operation with smart caching
+- **📦 Batch Processing** - Handle multiple downloads with a single command
+
+## 🚀 Installation
 
 ### Prerequisites
 
-- Python 3.6+
-- Spotify Developer API credentials
-- FFmpeg (for audio conversion)
+- 🐍 Python 3.6 or higher
+- 🔑 Spotify Developer API credentials
+- 🎬 FFmpeg (for audio conversion)
 
-### Quick Install
+### One-Line Setup
 
 ```bash
-# Clone the repository
-git clone https://github.com/AmirVoid12/SpotiFX.git
-cd SpotiFX
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run SpotiFX
-python spotifx.py
+git clone https://github.com/AmirVoid12/SpotiFX.git && cd SpotiFX && pip install -r requirements.txt
 ```
 
-### Getting Spotify API Credentials
+<details>
+<summary><b>🔐 Getting Spotify API Credentials</b></summary>
 
-1. Visit [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/)
-2. Log in with your Spotify account
-3. Create a new application
+1. Visit the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/)
+2. Sign in with your Spotify account
+3. Create a new app (any name works)
 4. Copy your Client ID and Client Secret
-5. Enter these credentials when SpotiFX prompts you
+5. Enter these when SpotiFX prompts you on first run
 
-## 🚀 Usage
+</details>
 
-### Interactive Mode
+## 🎮 Usage
 
-Simply run the application and follow the interactive menu:
+### Quick Start
 
 ```bash
+# Launch the interactive interface
 python spotifx.py
 ```
 
-### Command Line Mode
-
-Download specific content using command-line options:
+### Command-Line Magic
 
 ```bash
-# Download a track
+# Download a specific track
 python spotifx.py -t https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT
 
-# Download an album
+# Grab an entire album
 python spotifx.py -a https://open.spotify.com/album/0JGOiO34nwfUdDrD612dOp
 
 # Download a playlist
 python spotifx.py -p https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M
 
-# Specify custom download directory
-python spotifx.py -t https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT -d /path/to/downloads
+# Specify where to save files
+python spotifx.py -t spotify:track:4cOdK2wGLETKBW3PvgPWqT -d ~/Music/SpotiFX
 ```
 
-### Batch Download
+### Batch Processing
 
-Download multiple items at once by creating a text file with URLs (one per line) and using:
+Create a file containing URLs (one per line):
+
+```
+https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT
+https://open.spotify.com/album/0JGOiO34nwfUdDrD612dOp
+spotify:playlist:37i9dQZF1DXcBWIGoYBM5M
+```
+
+Then use the interactive batch downloader or:
 
 ```bash
-# Create a file with URLs
-echo "https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT" > urls.txt
-echo "https://open.spotify.com/album/0JGOiO34nwfUdDrD612dOp" >> urls.txt
-
-# Use the batch download menu option
+# Process the file through the menu system
 python spotifx.py
-# Then select "Batch Download" from the menu
+# Then select "Batch Download" → "Download from file"
 ```
 
 ## 📸 Screenshots
 
 <div align="center">
-  
-![Main Menu](https://via.placeholder.com/800x450.png?text=SpotiFX+Main+Menu)
-*Main Menu*
 
-![Track Download](https://via.placeholder.com/800x450.png?text=SpotiFX+Track+Download)
-*Track Download Progress*
+<!-- Main screenshot -->
+<img src="https://via.placeholder.com/1000x600.png?text=SpotiFX+Main+Interface" width="90%" alt="SpotiFX Main Interface"/>
+<p><i>Modern interactive interface with color-coded menus</i></p>
 
-![Download History](https://via.placeholder.com/800x450.png?text=SpotiFX+Download+History)
-*Download History*
+<table>
+<tr>
+<td width="50%">
+<img src="https://via.placeholder.com/600x350.png?text=Download+Progress" width="100%" alt="Download Progress"/>
+<p align="center"><i>Real-time download tracking</i></p>
+</td>
+<td width="50%">
+<img src="https://via.placeholder.com/600x350.png?text=Music+Library" width="100%" alt="Music Library View"/>
+<p align="center"><i>Organized music collection</i></p>
+</td>
+</tr>
+</table>
 
 </div>
 
 ## ⚙️ Configuration
 
-SpotiFX stores configuration in `~/.spotifx/config.ini`. You can modify these settings:
+SpotiFX automatically creates a config file at `~/.spotifx/config.ini` with these customizable settings:
 
-| Section | Option | Description | Default |
-|---------|--------|-------------|---------|
-| General | download_dir | Download directory | ~/SpotiFX_Downloads |
-| General | concurrent_downloads | Max simultaneous downloads | 3 |
-| Audio | audio_quality | Audio quality (kbps) | 320 |
-| Audio | audio_format | Audio format | mp3 |
-| Spotify | create_playlist_folders | Create separate folders for playlists | true |
-| YouTube | prefer_official_audio | Prefer official audio sources | true |
+| Category | Setting | Description | Default |
+|:--------:|:--------|:------------|:-------:|
+| 📁 **General** | `download_dir` | Where to save your music | `~/SpotiFX_Downloads` |
+| | `concurrent_downloads` | Simultaneous downloads | `3` |
+| | `auto_update_check` | Check for new versions | `true` |
+| 🔊 **Audio** | `audio_quality` | Bitrate (kbps) | `320` |
+| | `audio_format` | File format | `mp3` |
+| | `normalize_audio` | Consistent volume | `true` |
+| | `embed_cover_art` | Add album covers | `true` |
+| 🎵 **Spotify** | `create_playlist_folders` | Separate playlist directories | `true` |
+| | `region` | Content region | `US` |
+| 🎞️ **YouTube** | `prefer_official_audio` | Prioritize official sources | `true` |
+| | `force_ipv4` | Use IPv4 for connections | `true` |
 
-## 📝 Development Roadmap
+## 🔮 Roadmap
 
-- [x] Basic track download
-- [x] Album and playlist support
+- [x] Core downloading engine
+- [x] Album & playlist support
+- [x] Metadata embedding
 - [x] Concurrent downloads
-- [x] Metadata tagging
-- [ ] Mobile app integration
-- [ ] Remote control functionality
 - [ ] Web interface
+- [ ] Mobile companion app
+- [ ] Audio fingerprinting
+- [ ] Podcast support
 - [ ] Music library management
 
 ## ❓ FAQ
 
-### Is SpotiFX legal?
+<details>
+<summary><b>Is SpotiFX legal?</b></summary>
 
-SpotiFX is developed for educational purposes only. The application does not store or distribute any copyrighted content. It uses publicly available APIs and services. Users should respect copyright laws and artists' rights by supporting them through official channels.
+SpotiFX is developed for educational and personal use only. The app doesn't store or distribute copyrighted content directly. Users should respect copyright laws and support artists by purchasing music or using paid streaming services.
+</details>
 
-### How does SpotiFX work?
+<details>
+<summary><b>How does SpotiFX work?</b></summary>
 
-SpotiFX uses Spotify's API to fetch track metadata, then finds corresponding audio from publicly available sources on YouTube. The downloaded content is processed, tagged with the original metadata, and saved to your device.
+SpotiFX uses the Spotify API to gather track information and metadata, then finds matching audio from publicly available sources on YouTube. The downloaded content is processed, tagged with the original metadata, and saved to your device.
+</details>
 
-### My downloads are failing, what should I do?
+<details>
+<summary><b>Why are my downloads failing?</b></summary>
 
-Check our [Troubleshooting Guide](https://github.com/AmirVoid12/SpotiFX/wiki/Troubleshooting) or use the built-in troubleshooting menu in the application. Common issues include outdated dependencies, incorrect API credentials, or network problems.
+Common issues include network problems, outdated dependencies, or incorrect API credentials. Try using the built-in troubleshooting menu or check your internet connection. Make sure your Spotify API credentials are correct and that you have FFmpeg installed.
+</details>
 
-### Can I contribute to SpotiFX?
+<details>
+<summary><b>Can I contribute to SpotiFX?</b></summary>
 
-Absolutely! We welcome contributions of all kinds. Please see our [Contributing Guidelines](https://github.com/AmirVoid12/SpotiFX/wiki/Contributing) for more information.
+Absolutely! Contributions are welcome - from code improvements to documentation updates. See our [Contributing Guidelines](https://github.com/AmirVoid12/SpotiFX/wiki/Contributing) for more information.
+</details>
 
-## 📄 License
+## 📜 License
 
 SpotiFX is released under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgements
+## 🙌 Acknowledgements
 
-- [Spotipy](https://spotipy.readthedocs.io/) - Lightweight Python library for the Spotify Web API
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - A youtube-dl fork with additional features
-- [Mutagen](https://mutagen.readthedocs.io/) - Python module to handle audio metadata
-- [Colorama](https://pypi.org/project/colorama/) - Cross-platform colored terminal text
+- [Spotipy](https://spotipy.readthedocs.io/) - Spotify Web API client library
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - YouTube download library
+- [Mutagen](https://mutagen.readthedocs.io/) - Audio metadata handling
+- [Colorama](https://pypi.org/project/colorama/) - Terminal text styling
 
-## 🧑‍💻 Author
+## 👨‍💻 Author
 
 **Amir.Void** - [GitHub](https://github.com/AmirVoid12)
 
 ---
 
 <div align="center">
-  
-If you find SpotiFX useful, please consider ⭐ starring the repository on GitHub!
+
+<img src="https://via.placeholder.com/800x100.png?text=SpotiFX" width="60%" alt="SpotiFX Banner"/>
+
+If you enjoy SpotiFX, please consider giving it a ⭐ star on GitHub!
 
 </div>
