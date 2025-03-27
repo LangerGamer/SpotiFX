@@ -2161,7 +2161,7 @@ class SpotiFXApp:
         
         print("\n" + "=" * 60)
         print(f"SpotiFX {VERSION}")
-        print("\nSpotiFX is an advanced Spotify music downloader that lets you download")
+        print("\nSpotiFX is an Spotify music downloader that lets you download")
         print("your favorite tracks, albums, and playlists for offline listening.")
         print("\nFeatures:")
         print("- Download tracks, albums, and playlists from Spotify")
@@ -2721,7 +2721,7 @@ class SpotiFXApp:
 def parse_arguments():
     import argparse
     
-    parser = argparse.ArgumentParser(description=f"SpotiFX v{VERSION} - Advanced Spotify Music Downloader")
+    parser = argparse.ArgumentParser(description=f"SpotiFX v{VERSION} - Spotify Music Downloader")
     parser.add_argument('-t', '--track', help='Download a Spotify track by URL or ID')
     parser.add_argument('-a', '--album', help='Download a Spotify album by URL or ID')
     parser.add_argument('-p', '--playlist', help='Download a Spotify playlist by URL or ID')
@@ -2749,7 +2749,7 @@ def print_banner():
     
     print("\n" + "=" * width)
     print(Fore.CYAN + LOGO_ASCII + Style.RESET_ALL)
-    print(Fore.YELLOW + "  🎵 SpotiFX - Advanced Spotify Music Downloader 🎵" + Style.RESET_ALL)
+    print(Fore.YELLOW + "  🎵 SpotiFX - Spotify Music Downloader 🎵" + Style.RESET_ALL)
     print(Fore.CYAN + f"  Version {VERSION} - Created by Amir.Void (GitHub: AmirVoid12)" + Style.RESET_ALL)
     print("=" * width + "\n")
 

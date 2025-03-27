@@ -217,7 +217,7 @@ python spotifx.py
 <svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
   <rect width="800" height="400" rx="10" fill="#282c34"/>
   <rect x="20" y="20" width="760" height="50" rx="5" fill="#1DB954"/>
-  <text x="400" y="50" font-family="Arial" font-size="24" fill="white" text-anchor="middle" dominant-baseline="middle">SpotiFX - Advanced Spotify Downloader</text>
+  <text x="400" y="50" font-family="Arial" font-size="24" fill="white" text-anchor="middle" dominant-baseline="middle">SpotiFX - Spotify Downloader</text>
   
   <!-- Menu section -->
   <rect x="20" y="90" width="200" height="290" rx="5" fill="#333842"/>
