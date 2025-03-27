@@ -30,7 +30,7 @@
 
 ### Your Ultimate Spotify Music Downloader
 
-[![Version](https://img.shields.io/badge/version-3.2.1-00BFFF?style=for-the-badge&logo=github)](https://github.com/AmirVoid12/SpotiFX)
+[![Version](https://img.shields.io/badge/version-1.0.0-00BFFF?style=for-the-badge&logo=github)](https://github.com/AmirVoid12/SpotiFX)
 [![Python](https://img.shields.io/badge/python-3.6+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-22B573?style=for-the-badge)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/AmirVoid12/SpotiFX?style=for-the-badge&color=yellow&logo=github)](https://github.com/AmirVoid12/SpotiFX/stargazers)
@@ -374,7 +374,7 @@ SpotiFX automatically creates a config file at `~/.spotifx/config.ini` with thes
   
   <!-- Version indicator -->
   <text x="350" y="50" font-family="Arial" font-size="18" fill="#1DB954" text-anchor="middle">Development Roadmap</text>
-  <text x="350" y="70" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Current Version: 3.2.1</text>
+  <text x="350" y="70" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Current Version: 1.0.0</text>
 </svg>
 </div>
 
