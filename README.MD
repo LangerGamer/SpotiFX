@@ -201,14 +201,6 @@ https://open.spotify.com/album/0JGOiO34nwfUdDrD612dOp
 spotify:playlist:37i9dQZF1DXcBWIGoYBM5M
 ```
 
-Then use the interactive batch downloader or:
-
-```bash
-# Process the file through the menu system
-python spotifx.py
-# Then select "Batch Download" → "Download from file"
-```
-
 ## 📊 Examples
 
 <div align="center">
