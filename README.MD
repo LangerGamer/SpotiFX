@@ -431,10 +431,6 @@ SOFTWARE.
 - [Mutagen](https://mutagen.readthedocs.io/) - Audio metadata handling
 - [Colorama](https://pypi.org/project/colorama/) - Terminal text styling
 
-## 👨‍💻 Author
-
-**Amir.Void** - [GitHub](https://github.com/AmirVoid12)
-
 ---
 
 <div align="center">
